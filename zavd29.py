@@ -20,7 +20,7 @@ class Circle(Shape, IDrawable):
         return math.pi * (self.radius ** 2)
 
     def draw(self):
-        print(f"Малюємо коло з радіусом {self.radius}")
+        print(f"малюємо коло з радіусом {self.radius}")
 
 
 class Square(Shape, IDrawable):
@@ -31,7 +31,7 @@ class Square(Shape, IDrawable):
         return self.side ** 2
 
     def draw(self):
-        print(f"Малюємо квадрат зі стороною {self.side}")
+        print(f"малюємо квадрат зі стороною {self.side}")
 
 
 class Triangle(Shape, IDrawable):
@@ -43,7 +43,7 @@ class Triangle(Shape, IDrawable):
         return 0.5 * self.base * self.height
 
     def draw(self):
-        print(f"Малюємо трикутник з основою {self.base} та висотою {self.height}")
+        print(f"малюємо трикутник з основою {self.base} та висотою {self.height}")
 
 if __name__ == "__main__":
     shapes = [
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         Triangle(base=6, height=3)
     ]
 
-    print("--- Демонстрація поліморфізму ---\n")
+    print("--- демонстрація поліморфізму ---\n")
     for shape in shapes:
         shape.draw()  
-        print(f"Площа: {shape.calculate_area():.2f}\n")
+        print(f"площа: {shape.calculate_area():.2f}\n")
